@@ -1,0 +1,21 @@
+# .gotestsum.yaml
+# Configuration for gotestsum
+
+# Run tests in verbose mode
+verbose: true
+
+# Run tests in short mode (display minimal output)
+short: true
+
+# Run tests in parallel (adjust the value as per your preference)
+jobs: 4
+
+# Enable watching for file changes and automatically run tests
+watch:
+  mode: poll
+  include:
+    - '**/*.go'
+    - '**/*.mod'
+    - '**/*.sum'
+  exclude:
+    - '**/vendor/**'

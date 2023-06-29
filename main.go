@@ -111,3 +111,7 @@ func main() {
 		fmt.Println(message)
 	}
 }
+
+func Hello() string {
+	return "hello"
+}
